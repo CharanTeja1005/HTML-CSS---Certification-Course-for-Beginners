@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Web Project</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                line-height: 1.5em;
+            }
+            #header{
+                font-family: arial;
+                background: black;
+                height: 100px;
+            }
+            #contentwrapper{
+                float: left;
+                width: 100%;
+            }
+            #contentcolumn{
+                margin: 0 230px 0 230px;
+            }
+            #leftcolumn{
+                float: left;
+                width: 230px;
+                margin-left: -100%;
+                background-color: #24C8FF;
+            }
+            #rightcolumn{
+                float: left;
+                width: 230px;
+                margin-left: -230px;
+                background-color: #fffb00;
+            }
+            .innertext{
+                margin: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #5e5e5e;
+            }
+            #footer{
+                clear: left;
+                width: 100%;
+                background: black;
+                color: #fff;
+                font-family: arial;
+                text-align: center;
+                padding: 4px;
+            }
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+            }
+            li{
+                float: left;
+                border-right:1px solid #bbb;
+            }
+            li:last-child{
+                border-right: none;
+            }
+            li a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+        li a:hover:not(.active){
+            background-color: #808080;
+        }
+        .active{
+            background-color: #0099ff;;
+        }
+
+        @media (max-width: 840px){
+            #leftcolumn{
+                margin-left: -100%;
+            }
+            #rightcolumn{
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                clear: both;
+            }
+            #contentcolumn{
+                margin-right: 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <ul style="display:inline">
+                    <li><a class='active' href='#home'>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertext">
+                    <b>Welcome!</b><br/>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius amet quibusdam commodi unde dolorem. Dignissimos quam, eaque sed voluptate officia, ex a blanditiis dolor debitis obcaecati molestias. Doloremque deleniti ad explicabo molestiae nisi quia. Nulla aspernatur ipsum fuga facere maxime cupiditate necessitatibus rerum nobis explicabo sit, nisi repellendus itaque sequi, quidem sint accusamus placeat voluptates natus fugit obcaecati amet minus? Ipsa, molestias vitae tempore rerum quo nobis non cum delectus possimus harum error quis corporis at cupiditate placeat quos iusto totam facere! Illum laudantium sapiente nisi ipsa, doloremque vel quibusdam perspiciatis maiores sunt iure saepe qui tempora dolorem nemo assumenda molestiae natus repellendus! Eius consectetur amet, cumque atque, assumenda facilis sapiente veritatis quidem tempore nostrum quaerat nulla culpa debitis aliquid similique incidunt! Id earum nostrum corrupti, labore deserunt soluta mollitia corporis eligendi, libero, tempore similique beatae voluptatibus error ipsum officia totam quibusdam esse expedita! Consectetur repudiandae, vitae reiciendis ipsam eligendi illo nihil voluptatem tenetur similique eum, quod iste voluptate ea at obcaecati veritatis necessitatibus. Optio dolor consequuntur itaque nesciunt fuga aliquam fugiat obcaecati architecto, similique quia veritatis. Consequuntur eos veniam aspernatur facilis vel minima eius aut debitis. Asperiores veniam tenetur odio, soluta iusto eum adipisci hic corrupti itaque dolore voluptatum neque pariatur sequi quidem molestias dolorem quos praesentium id iste quasi et! Repudiandae, cumque, facere blanditiis quidem aspernatur molestias ipsam possimus aut perspiciatis eaque libero quo voluptatem quaerat pariatur dolore dicta nemo quibusdam cupiditate vitae! Quibusdam delectus facilis sit, est hic perspiciatis esse atque. Voluptatem ullam aut quasi deserunt quisquam?
+                </div>
+            </div>
+        </div>
+        <div id="leftcolumn">
+            <div class="innertext">
+                <b>Left Column:<em>230px</em></b><br/>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente inventore doloremque dolorum temporibus nesciunt magni, numquam saepe quis sequi animi tempora quae, cum assumenda sint, reiciendis nemo? Accusamus eos earum iste quod cupiditate, sit ratione nostrum, error ex soluta quasi deserunt a. Voluptatibus quo sint atque dolorum perspiciatis quia exercitationem unde deserunt architecto omnis vitae nemo dolorem autem eos quod, est adipisci totam. Nisi iusto sit laborum nobis inventore nulla optio mollitia. Voluptatibus et id eligendi ipsa ipsam temporibus animi amet aliquid obcaecati ullam consequuntur, repellendus nam non velit modi eos veniam illum fugit reprehenderit est rerum dicta molestiae consequatur.
+            </div>
+        </div>
+        <div id="rightcolumn">
+            <div class="innertext">
+                <b>Right Column: <em>230px</em></b><br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum optio quidem facere, quaerat asperiores soluta corrupti harum rerum facilis velit dolorem in reprehenderit, odit minima sapiente. Blanditiis ipsam deleniti ducimus libero? Nobis error velit eos modi eligendi fugiat voluptatibus totam? Magni doloremque expedita quis ab debitis ipsum eius consequuntur sed distinctio nemo eos modi molestiae facilis, libero delectus perferendis placeat, rerum, aperiam dignissimos hic? Totam sint doloremque doloribus illum aut. Rerum dolorem dolor ipsa quis perspiciatis exercitationem laborum error vero cumque in distinctio atque animi, nulla inventore labore quidem praesentium totam, natus excepturi eos. Sint vitae alias vel laboriosam molestiae.
+            </div>
+        </div>
+        <div id="footer">Footer</div>
+    </body>
+</html>
