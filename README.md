@@ -1,3 +1,6 @@
 # HTML-CSS---Certification-Course-for-Beginners
-By Udemy
+Course by Udemy
+
+Instructor : Kiran Gavali
+
 Project files only
